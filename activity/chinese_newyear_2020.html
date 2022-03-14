@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Phonesackgroup.com</title>
+<link rel="icon" type="image/ico" href="../img/logo/PSG.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/color.css">
+<link rel="stylesheet" href="../fontawesome/css/all.css">
+<script src="../fontawesome/js/all.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+<style>
+  .mySlides {display:none}
+  .w3-left, .w3-right, .w3-badge {cursor:pointer}
+  .w3-badge {height:13px;width:13px;padding:0}
+  </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" id="navbar">
+  <div class="w3-bar w3-wide w3-padding w3-text-white w3-animate-opacity">
+    <a href="../index.html" class="w3-bar-item"><img src="../img/logo/PSG.gif" alt="Lights" style="width:140px;height: 30px;"></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="../index.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="../index.html" class="w3-bar-item w3-button">About</a>
+      <a href="../index.html" class="w3-bar-item w3-button">Latest News</a>
+      <a href="../index.html" class="w3-bar-item w3-button">Activities</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="../career.html" class="w3-bar-item w3-button">Career</a>
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content w3-padding w3-blue-grey" style="max-width:1564px">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="kso">
+    <h4 class="w3-border-bottom w3-border-light-grey w3-padding-16">Chinese and Viet Name's new year 2020</h4>
+  </div>
+
+<!--image slide show-->
+
+<div class="w3-content w3-display-container w3-animate-opacity" style="max-width:800px">
+  <img class="mySlides w3-round" src="../img/activites/psg/psg_family2019-2020.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+  </div>
+</div>
+
+
+<!--Information section-->
+  <div class="w3-container">
+    <h3>Project Over view</h3>
+    <p>
+      NT1PC was authorized by the Government of the Lao People's Democratic Republic (GOL) to develop, own and operate
+      the Nam Theun 1 Hydropower Project (NT1HPP).
+      The company has entered into a concession agreement (CA) with the GOL since 14 June, 2016, the concession period
+      of which spans 27 years.
+    </p>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+  </div>
+  <div class="w3-container w3-padding-32 w3-light-grey w3-round w3-shadow" id="contact">
+      <div class="w3-cell-row">
+        <div class="w3-third w3-container">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Address</h3>
+            <p>
+                Unit 15, Sithong Road <br>
+                Pakthang Village, Sikhottabong District <br>
+                PO Box: 1808 <br>
+                Vientiane, Lao PDR
+            </p>
+        </div>
+        <div class="w3-third w3-container">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+            <p>
+                Career Opportinities: <br>
+                Email: careers@phonesackgroup.com <br>
+                Tel: (021) 550 497 <br>
+                Fax: (021) 550 498 <br>
+                Email: info@phonesackgroup.com <br>
+                www.phonesackgroup.com
+            </p>
+        </div>
+        <div class="w3-third w3-container">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Information</h3>
+            <p>
+                <a>Download Application form</a> <br>
+                <a>Send your CV to us</a>  
+            </p>
+        </div>
+      </div>
+  </div>
+
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Developed by: Thaiyang</p>
+</footer>
+<script>
+    // to hide navbar when scrolling down
+    var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+// image slide show 
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+</body>
+</html>
